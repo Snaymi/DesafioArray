@@ -31,6 +31,6 @@ public class DesafioArray {
                         System.out.print("Dia inválido\n");
                          }
 
-            }else {System.out.print("erro Aqui");}
+            }else {System.out.print("erro Aqui, testando");}
     }
 }
