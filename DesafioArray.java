@@ -36,7 +36,7 @@ public class DesafioArray {
                                     System.out.print("hora inválida");}
 
                         }else {
-                        System.out.print("Dia inválido\n");
+                        System.out.print("Dia ,inválido\n");
                          }
 
             }while (opção =1) ;
