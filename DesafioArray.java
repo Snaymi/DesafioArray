@@ -4,18 +4,26 @@ public class DesafioArray {
     public static void main (String [] args) {
 
         int [][] matriz;
-        String mes;
+        int opção;
         Scanner scan = new Scanner (System.in);
         int dia;
         int hora;
+        int mes;
 
-        System.out.print("Vamos armazenar os compromissos de qual mês?");
-        mes = scan.next();
+        System.out.print("O que você quer fazer? \n 1 - Inserir compromisso \n 2 - Consultar compromisso");
+        System.out.print("\n3 - Sair");
+        opção = scan.nextInt();
 
-            if (mes.equals("Janeiro")||mes.equals("janeiro")) {
+            
+            do{
 
-                System.out.print("Janeiro tem 31 dias, qual é dia que sera agendado o primeiro compromisso? ");
-
+                System.out.print("Para qual mes? \n Utilize meses númericos ");
+                
+                mes = scan.nextInt();
+                
+                    if (mes >0 && mes < 13) {
+                        
+                    }
                 dia = scan.nextInt();
 
                     if (dia>0 && dia<32){
@@ -31,6 +39,6 @@ public class DesafioArray {
                         System.out.print("Dia inválido\n");
                          }
 
-            }else {System.out.print("erro Aqui, testando");}
+            }while (opção =1) ;
     }
 }
