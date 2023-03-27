@@ -39,7 +39,7 @@ public class DesafioArray {
             System.out.print("Qual seria o dia?\n");
             dia = scan.nextInt();
             if (mes == 2){
-              do{ 
+              
                 if (dia<29) {
                     System.out.print("Confirme os dados:\n");
 
@@ -47,11 +47,15 @@ public class DesafioArray {
            
                 confirmaçao = scan.next();
                 }else {
+                    
                     System.out.print("O dia não existe\n");
-                    System.out.print("Gostaria de tentar denovo? \n")
-                    denovo = scan.next();
+                    System.out.print("Digite outro dia \n");
+                    dia = scan.nextInt();
+                    
+                    
+                    
                 }
-            }while(denovo.equals ("Sim"));
+           
                
             }
             System.out.print("Confirme os dados:\n");
